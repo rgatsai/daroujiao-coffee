@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大肉腳咖啡館 Big Meat Foot Coffee</title>
+    <style>
+        /* 基礎設定 */
+        body { 
+            font-family: 'Helvetica Neue', Arial, 'LiHei Pro', '微軟正黑體', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fdfaf6; /* 溫暖的米白色背景 */
+            color: #4a3b32; /* 深咖啡色字體 */
+            line-height: 1.6;
+        }
+        
+        /* 頂部橫幅 */
+        header { 
+            background-color: #8b5a2b; /* 經典咖啡色 */
+            color: white; 
+            padding: 4rem 2rem; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 3rem; letter-spacing: 4px; }
+        .subtitle { font-size: 1.2rem; margin-top: 15px; opacity: 0.9; font-weight: 300; }
+        
+        /* 內容區塊 */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .section { 
+            background: white; 
+            padding: 40px; 
+            margin-bottom: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+        }
+        h2 { color: #8b5a2b; border-bottom: 2px solid #f0e6d2; padding-bottom: 10px; margin-top: 0;}
+        
+        /* 菜單網格設計 */
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;}
+        @media (max-width: 768px) { .menu-grid { grid-template-columns: 1fr; gap: 20px;} }
+        .menu-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed #e0d8c8; }
+        .menu-item span:last-child { font-weight: bold; color: #d35400; }
+        
+        /* 底部資訊 */
+        footer { text-align: center; padding: 30px; background-color: #3e2723; color: #d7ccc8; margin-top: 40px; font-size: 0.9rem;}
+        
+        .contact-info p { margin: 10px 0; display: flex; align-items: center; }
+        .contact-info span { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>大肉腳咖啡館</h1>
+        <div class="subtitle">踏實的每一步，為你萃取最醇厚的風味</div>
+    </header>
+
+    <div class="container">
+        <!-- 關於我們 -->
+        <div class="section">
+            <h2>關於我們</h2>
+            <p>歡迎來到「大肉腳咖啡館」！名字雖然接地氣，但我們對待每一粒咖啡豆的態度絕對是最高規格。我們相信，好咖啡不需要高高在上，而是能陪伴你走過日常的每一個腳印。不管你是剛下班的疲憊靈魂，還是週末想放空的都市旅人，這裡都有一個舒適的角落為你保留。</p>
+        </div>
+
+        <!-- 精選菜單 -->
+        <div class="section">
+            <h2>精選菜單 MENU</h2>
+            <div class="menu-grid">
+                <div>
+                    <h3>☕ 職人咖啡</h3>
+                    <div class="menu-item"><span>經典黑咖啡</span><span>$100</span></div>
+                    <div class="menu-item"><span>大肉腳招牌拿鐵</span><span>$140</span></div>
+                    <div class="menu-item"><span>焦糖海鹽瑪奇朵</span><span>$160</span></div>
+                    <div class="menu-item"><span>燕麥奶微醺拿鐵</span><span>$170</span></div>
+                </div>
+                <div>
+                    <h3>🍰 療癒甜點</h3>
+                    <div class="menu-item"><span>踏實重乳酪蛋糕</span><span>$130</span></div>
+                    <div class="menu-item"><span>手工肉桂捲 (每日限量)</span><span>$120</span></div>
+                    <div class="menu-item"><span>大人味提拉米蘇</span><span>$150</span></div>
+                    <div class="menu-item"><span>現烤熱壓帕尼尼</span><span>$160</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 聯絡資訊 -->
+        <div class="section contact-info">
+            <h2>尋找我們</h2>
+            <p><span>📍</span> 地址：台北市中山區咖啡路 123 號 1 樓</p>
+            <p><span>🕒</span> 營業時間：週一至週日 10:00 - 18:00 (每週二公休)</p>
+            <p><span>📞</span> 電話：02-8765-4321</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 大肉腳咖啡館 Big Meat Foot Coffee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
